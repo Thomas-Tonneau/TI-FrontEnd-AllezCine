@@ -1,3 +1,14 @@
-.thumbnail>img{
+/*.thumbnail>img{
 	max-height: 200px;
+}*/
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+.row>[class*='col-'] {
+	 display: flex;
+	 flex-direction: column;
 }
