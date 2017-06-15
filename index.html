@@ -8,16 +8,7 @@
 		<script src="js/jquery-2.2.4.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<style type="text/css">
-			.row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-}
-.row>[class*='col-'] {
-	 display: flex;
-	 flex-direction: column;
-}
+			
 		</style>
 	</head>
 	<body>
@@ -237,7 +228,70 @@
 				<h3>SHOP MOVIES</h3>
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1">
-						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+
+					<!-- Test slider !!! 
+
+					<ul class="nav row">
+								<li class="col-md-2" data-target="#myCarousel" data-slide-to="0" class="active">
+									<div class="thumbnail">
+										<img src="img/swissarmyman-2016-comedie.jpg" alt="" class="img-responsive">
+										<div class="caption">
+											<h5 class="text-center">Swiss Army Man</h5>
+											<p></p>
+										</div>
+									</div>
+								</li>
+								<li class="col-md-2" data-target="#myCarousel" data-slide-to="1">
+									<div class="thumbnail">
+										<img src="img/intouchables-2011-comedie.jpg" alt="" class="img-responsive">
+										<div class="caption">
+											<h5 class="text-center">Intouchables</h5>
+											<p>2011</p>
+										</div>
+									</div>
+								</li>
+								<li class="col-md-2" data-target="#myCarousel" data-slide-to="2">
+									<div class="thumbnail">
+										<img src="img/inception-2010-scifi.jpg" alt="" class="img-responsive">
+										<div class="caption">
+											<h5 class="text-center">Inception</h5>
+											<p></p>
+										</div>
+									</div>
+								</li>
+								<li class="col-md-2" data-target="#myCarousel" data-slide-to="3">
+									<div class="thumbnail">
+										<img src="img/zoolander-2001-comedie.jpg" alt="" class="img-responsive">
+										<div class="caption">
+											<h5 class="text-center">Zoolander</h5>
+											<p></p>
+										</div>
+									</div>
+								</li>
+								<li class="col-md-2" data-target="#myCarousel" data-slide-to="4">
+									<div class="thumbnail">
+										<img src="img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="" class="img-responsive">
+										<div class="caption">
+											<h5 class="text-center">What We Do In The Shadows</h5>
+											<p></p>
+										</div>
+									</div>
+								</li>
+								<li class="col-md-2" data-target="#myCarousel" data-slide-to="5">
+									<div class="thumbnail">
+										<img src="img/batmanmovie-2017-comedie.jpg" alt="" class="img-responsive">
+										<div class="caption">
+											<h5 class="text-center">The LEGO Batman Movie</h5>
+											<p></p>
+										</div>
+									</div>
+								</li>
+							</ul>
+
+
+							-->
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">							
 							<div class="carousel-inner">
 								<div class="item active">
 									<div class="row">
@@ -408,6 +462,17 @@
 									</div>
 								</div>
 							</div>
+							<!-- controls
+									
+								<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="right carousel-control" href="#myCarousel" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							-->
 							<ul class="nav row">
 								<li class="col-md-2" data-target="#myCarousel" data-slide-to="0" class="active">
 									<div class="thumbnail">
@@ -465,6 +530,55 @@
 								</li>
 							</ul>
 						</div>
+					</div>
+				</div>
+			</section>
+			<section id="contact">
+				<h3>CONTACT US</h3>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="row">
+							<div class="col-md-3">
+								<i class="fa fa-map-marker" aria-hidden="true"></i>
+								<h4>Address</h4>
+							</div>
+							<div class="col-md-3">
+								<i class="fa fa-phone" aria-hidden="true"></i>
+								<h4>Call</h4>
+							</div>
+							<div class="col-md-3">
+								<i class="fa fa-envelope-o" aria-hidden="true"></i>
+								<h4>Email</h4>
+							</div>
+							<div class="col-md-3">
+								
+								<h4>Social media</h4>
+							</div>
+						</div>
+						<form action="">
+							<div class="row">
+								<div class="col-md-6">
+									<input class="form-control" placeholder="FIRST NAME" type="text">
+								</div>
+								<div class="col-md-6">
+									<input class="form-control" placeholder="LAST NAME" type="text">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<input class="form-control" placeholder="EMAIL" type="text">
+								</div>
+								<div class="col-md-6">
+									<input class="form-control" placeholder="SUBJECT" type="text">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<textarea class="form-control" rows="10" placeholder="YOUR MESSAGE"></textarea>
+								</div>
+							</div>
+							<button class="btn" type="submit">SEND MESSAGE</button>
+						</form>
 					</div>
 				</div>
 			</section>
