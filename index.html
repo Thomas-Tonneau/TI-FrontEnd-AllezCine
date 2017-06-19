@@ -4,9 +4,9 @@
 	<title>CINE passion</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="js/jquery-2.2.4.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<style>
@@ -29,30 +29,30 @@
 
 
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar">
 	<header>
 		<div class="container">
-			<div class="row">
+			<div  id="recherche" class="row">
 				<div class="col-md-1"></div>
 				<div class="col-md-2">
-					<img src="img/cinepassion-logo.png" alt="" width="45%">
+					<img src="img/cinepassion-logo.png" alt="" width="65%">
 				</div>
-				<div class="col-md-4">
-					<div class="input-group stylish-input-group input-append">
+				<div class="col-md-5 barre-go">
+					<div class="input-group ">
 						<input type="text" class="form-control"  placeholder="Search" >
-						<span class="input-group-btn">
-							<button class="btn" type="button">
-								go
-							</button>
+
+						<span class="btn input-group-addon "  type="button">
+							go
 						</span>
+
 					</div>
 
 				</div>
-				<div class="col-md-2 col-md-offset-1 text-right"><span class="glyphicon glyphicon-earphone"></span>+000 123 435 653</div>
+				<div class="col-md-2  text-right"><span class="glyphicon glyphicon-earphone"></span>+000 123 435 653</div>
 
-					<div class="col-md-1">
+				<div class="col-md-1">
 
-					<button type="button" class="btn" data-toggle="modal" data-target="#myModal">LOGIN</button>
+					<button type="button" class="btn login" data-toggle="modal" data-target="#myModal">LOGIN</button>
 					<div class="modal fade" id="myModal" role="dialog">
 						<div class="modal-dialog">
 							<div class="modal-content">
@@ -67,241 +67,230 @@
 
 											<label for="password">Password :  </label><input type="text" name="password" id="password"/>
 
-										 <label for="remember_box"><input checked="checked" value="1" id="remember_box" type="checkbox"> Rester connecté</label>
+											<label for="remember_box"><input checked="checked" value="1" id="remember_box" type="checkbox"> Rester connecté</label>
 
 
 											<a class="pwd" href="">Si vous avez oublié votre mot de passe</a>
 
 
-                		  <button type="button" class="btn btn-default">Créer un compte</button>
+											<button type="button" class="btn btn-default">Créer un compte</button>
 										</div>
 									</form>
 
-									</div>
-									<div class="modal-footer">
-										 <button onclick="ok" name="valider" id="valider">ok</button>
-										<a href=" " data-dismiss="modal">Cancel</a>
-									</div>
+								</div>
+								<div class="modal-footer">
+									<button onclick="ok" name="valider" id="valider">ok</button>
+									<a href=" " data-dismiss="modal">Cancel</a>
 								</div>
 							</div>
 						</div>
 					</div>
-
 				</div>
-			</div>
 
-			<nav id="home" class="navbar navbar-inverse navbar-top">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="#">   </a>
-					</div>
-					<div>
+			</div>
+		</div>
+
+		<nav id="home" class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">   </a>
+						</div>
 						<div class="collapse navbar-collapse" id="myNavbar">
 							<ul class="nav navbar-nav">
-								<div class="container">
-									<div class="row">
-										<div class="col-md-10 col-md-offset-1">
-											<div class="row">
-												<div class="col-md-2">
-													<li><a href="index.html">Home</a></li>
-												</div>
-												<div class="col-md-2">
-						 							<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Box office <span class="caret"></span></a>
-														<ul class="dropdown-menu">
-															<li><a href="#">FEATURES MOVIES</a></li>
-															<li><a href="#">SERIES TV</a></li>
-															<li><a href="#">SHOP MOVIES</a></li>
-															<li><a href="#">CONTACT></li>
-															</ul>
-														</li>
-													</div>
-													<div class="col-md-2">
-														<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Films <span class="caret"></span></a>
-															<ul class="dropdown-menu">
-																<li><a href="#">FEATURES MOVIES</a></li>
-																<li><a href="#">SERIES TV</a></li>
-																<li><a href="#">SHOP MOVIES</a></li>
-																<li><a href="#">CONTACT</a></li>
-															</ul>
-														</li>
-													</div>
-													<div class="col-md-2">
-														<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Series <span class="caret"></span></a>
-															<ul class="dropdown-menu">
-																<li><a href="#">Enfants</a></li>
-																<li><a href="#">Tout publique</a></li>
-																<li><a href="#">policiers</a></li>
-																<li><a href="#">Autres</a></li>
-															</ul>
-														</li>
-													</div>
-													<div class="col-md-2">
-														<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop movies <span class="caret"></span></a>
-															<ul class="dropdown-menu">
-																<li><a href="#">Enfants</a></li>
-																<li><a href="#">Tout publique</a></li>
-																<li><a href="#">policiers</a></li>
-																<li><a href="#">Autres</a></li>
-															</ul>
-														</li>
-													</div>
-													<div class="col-md-2">
-														<li><a href="index.html">contact</a></li>
-													</div>
-												</div>
-											</div>
+								<li class="active link"><a href="index.html">Home</a></li>
+								<li class="dropdown link">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Box office
+										<span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">FEATURES MOVIES</a></li>
+											<li><a href="#">SERIES TV</a></li>
+											<li><a href="#">SHOP MOVIES</a></li>
+											<li><a href="#">CONTACT></a></li>
+										</ul>
+									</li>
+									<li class="dropdown link">
+										<a class="dropdown-toggle" data-toggle="dropdown" href="#">Films
+											<span class="caret"></span></a>
+											<ul class="dropdown-menu">
+												<li><a href="#">FEATURES MOVIES</a></li>
+												<li><a href="#">SERIES TV</a></li>
+												<li><a href="#">SHOP MOVIES</a></li>
+												<li><a href="#">CONTACT</a></li>
+											</ul>
+										</li>
+										<li class="dropdown link">
+											<a class="dropdown-toggle" data-toggle="dropdown" href="#">Series
+												<span class="caret"></span></a>
+												<ul class="dropdown-menu">
+													<li><a href="#">Enfants</a></li>
+													<li><a href="#">Tout publique</a></li>
+													<li><a href="#">policiers</a></li>
+													<li><a href="#">Autres</a></li>
+												</ul>
+											</li>
+											<li class="dropdown link">
+												<a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop movies
+													<span class="caret"></span></a>
+													<ul class="dropdown-menu">
+														<li><a href="#">Enfants</a></li>
+														<li><a href="#">Tout publique</a></li>
+														<li><a href="#">policiers</a></li>
+														<li><a href="#">Autres</a></li>
+													</ul>
+												</li>
+												<li class="link"><a href="index.html">contact</a></li>
+											</ul>
 										</div>
 									</div>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</nav>
-
-				<div class="jumbotron text-center">
-
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-md-9">
-							<div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-									<div class="carousel-inner">
-										<div class="item active">
-											<img src="img/swissarmyman-2016-comedie.jpg" alt="" style="width:100% ;" >
-											<div class="carousel-caption">
-												<p>Hank un homme désespéré,suicidaire, convainc un cadavre que la vie vaut la peine d'être vécue;... </p>
-											</div>
-										</div>
-										<div class="item">
-											<img src="img/batmanmovie-2017-comedie.jpg" alt="" style="width:100% ;">
-											<div class="carousel-caption">
-												<p>... </p>
-											</div>
-										</div>
-										<div class="item">
-											<img src="img/intouchables-2011-comedie.jpg" alt="" style="width:100% ;">
-											<div class="carousel-caption">
-												<p>...Un riche aristocrate et un jeune de banlieu,deux univers vont se téléscoper,s'apprivoiser vers une amitié forte ,dingue,inattendue;intouchable... </p>
-											</div>
-										</div>
-										<div class="item">
-											<img src="img/lepatientanglais-1996-dramatique.jpg" alt="" style="width:100% ;">
-											<div class="carousel-caption">
-												<p>.la présence d'un homme mystérieux et méconnaissable, le patient anglais, va bouleverser le destin de ceux qui croisent son chemin. .. </p>
-											</div>
-
-										</div>
-										<div class="item">
-											<img src="img/inception-2010-scifi.jpg" alt="" style="width:100%;">
-											<div class="carousel-caption">
-												<p>l'inception,au lieu de subtiliser un rêve,Cobb fait implanter une idée dans l'esprit d'un individu mais l'enemi a un coup d'avance... </p>
-											</div>
-										</div>
-										<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-											<span class="glyphicon glyphicon-chevron-left"></span>
-											<span class="sr-only">Previous</span>
-										</a>
-										<a class="right carousel-control" href="#myCarousel" data-slide="next">
-											<span class="glyphicon glyphicon-chevron-right"></span>
-											<span class="sr-only">Next</span>
-										</a>
-									</div>
-
 								</div>
 							</div>
-						 <div class="col-md-3">
+						</nav>
+						<div id="jumbotron" class="jumbotron text-center no-padding">
 
-								<ul class="nav">
-									<li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">
-										<div class="row">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-9 no-padding">
+										<div id="myCarousel" class="carousel slide" data-ride="carousel">
 
+											<div class="carousel-inner">
+												<div class="item active">
+													<div class="swissarmyman"></div>
+													<div class="carousel-caption">
+														<p>Hank un homme désespéré,suicidaire, convainc un cadavre que la vie vaut la peine d'être vécue;... </p>
+													</div>
+												</div>
+												<div class="item">
+													<div class="batman"></div>
+													<div class="carousel-caption">
+														<p>... </p>
+													</div>
+												</div>
+												<div class="item">
+													<div class="intouchables"></div>
+													<div class="carousel-caption">
+														<p>...Un riche aristocrate et un jeune de banlieu,deux univers vont se téléscoper,s'apprivoiser vers une amitié forte ,dingue,inattendue;intouchable... </p>
+													</div>
+												</div>
+												<div class="item">
+													<div class="patientanglais"></div>
+													<div class="carousel-caption">
+														<p>.la présence d'un homme mystérieux et méconnaissable, le patient anglais, va bouleverser le destin de ceux qui croisent son chemin. .. </p>
+													</div>
 
-											<div class="col-md-3 "><img src="img/swissarmyman-2016-comedie.jpg" width="40%" ></div>
-
-											<div class="col-md-9"><h5>swissarmy</h5> <p> Hank un homme désespéré,suicidaire, convainc un cadavre que la vie vaut la peine d'être vécue;   </div>
-										</p></div>
-									</a></li>
-									<li data-target="#myCarousel" data-slide-to="1" class="active"><a href="#">
-										<div class="row">
-
-											<div class="col-md-3"> <img src="img/index.jpeg" width="40%">   </div>
-											<div class="col-md-9"><h5>Batman</h5>    </div>
+												</div>
+												<div class="item">
+													<div class="inception"></div>
+													<div class="carousel-caption align-baseline">
+														<p>l'inception,au lieu de subtiliser un rêve,Cobb fait implanter une idée dans l'esprit d'un individu mais l'enemi a un coup d'avance... </p>
+													</div>
+												</div>
+												<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+													<span class="glyphicon glyphicon-chevron-left"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="right carousel-control" href="#myCarousel" data-slide="next">
+													<span class="glyphicon glyphicon-chevron-right"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
 
 										</div>
-									</a></li>
-									<li data-target="#myCarousel" data-slide-to="2" class="active"><a href="#">
-										<div class="row">
+									</div>
+									<div class="col-md-3 no-padding resume">
+
+										<ul class="nav">
+											<li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">
+												<div class="row">
+
+
+													<div class="col-md-3 swissarmyman hauteur"></div>
+
+													<div class="col-md-9 no-padding"><h5>swissarmy</h5> <p> Hank un homme désespéré,suicidaire, convainc un cadavre que la vie vaut la peine d'être vécue;   </div>
+													</p></div>
+												</a></li>
+												<li data-target="#myCarousel" data-slide-to="1" class="active"><a href="#">
+													<div class="row">
+
+														<div class="col-md-3 batman hauteur">  </div>
+														<div class="col-md-9 no-padding"><h5>Batman</h5>    </div>
+
+													</div>
+												</a></li>
+												<li data-target="#myCarousel" data-slide-to="2" class="active"><a href="#">
+													<div class="row">
 
 
 
-											<div class="col-md-3"><img src="img/intouchables-2011-comedie.jpg" width="40%">     </div>
+														<div class="col-md-3 intouchables hauteur"></div>
 
-											<div class="col-md-9"><h5>Intouchables</h5><p> Un riche aristocrate et un jeune de banlieu,deux univers vont se téléscoper,s'apprivoiser vers une amitié forte ,dingue,inattendue;intouchable...  </div>
+														<div class="col-md-9 no-padding"><h5>Intouchables</h5><p> Un riche aristocrate et un jeune de banlieu,deux univers vont se téléscoper,s'apprivoiser vers une amitié forte ,dingue,inattendue;intouchable...  </div>
 
 
 
-										</p></div>
-									</a></li>
-									<li data-target="#myCarousel" data-slide-to="3" class="active"><a href="#">
-										<div class="row">
-											<div class="col-md-3"><img src="img/lepatientanglais-1996-dramatique.jpg" width=40%>     </div>
-											<div class="col-md-9"><h5>Le patient anglais</h5><p>la présence d'un homme mystérieux et méconnaissable, le patient anglais, va bouleverser le destin de ceux qui croisent son chemin.     </div>
-										</p></div>
-									</a></li>
-									<li data-target="#myCarousel" data-slide-to="4" class="active"><a href="#">
-										<div class="row">
-											<div class="col-md-3"><img src="img/inception-2010-scifi.jpg" width=40%>    </div>
-											<div class="col-md-9"><h5> Inception</h5><p>l'inception,au lieu de subtiliser un rêve,Cobb fait implanter une idée dans l'esprit d'un individu mais l'enemi a un coup d'avance...
-											</p></div>
+														</p></div>
+													</a></li>
+													<li data-target="#myCarousel" data-slide-to="3" class="active"><a href="#">
+														<div class="row">
+															<div class="col-md-3 patientanglais hauteur"></div>
+															<div class="col-md-9 no-padding"><h5>Le patient anglais</h5><p>la présence d'un homme mystérieux et méconnaissable, le patient anglais, va bouleverser le destin de ceux qui croisent son chemin.     </div>
+															</p></div>
+														</a></li>
+														<li data-target="#myCarousel" data-slide-to="4" class="active"><a href="#">
+															<div class="row">
+																<div class="col-md-3 inception hauteur"></div>
+																<div class="col-md-9 no-padding"><h5> Inception</h5><p>l'inception,au lieu de subtiliser un rêve,Cobb fait implanter une idée dans l'esprit d'un individu mais l'enemi a un coup d'avance...
+																</p></div>
+															</div>
+														</a></li>
+													</ul>
+												</div>
+
+
+											</div>
 										</div>
-									</a></li>
-								</ul>
+									</div>
+								</div>
+							</header>
+							<div class="container">
 							</div>
-
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-		<div class="container">
-		</div>
-		 <div id="cookieChoiceInfo2" style="width: 96%; background: rgb(222, 227, 235) none repeat scroll 0% 0%; margin: 0px auto; left: 0px; bottom: 0px; padding: 15px 2%; color: rgb(0, 0, 0); z-index: 45001; text-align: center;"><span><span style="color:#5f738e">Nous utilisons des <a style="color:#5f738e;text-decoration:underline;" href="http://www.cinepassion.com/cookies.php">cookies</a> pour optimiser votre expérience sur notre site. En utilisant notre site vous acceptez que nous appliquions des cookies</span></span><a id="cookieChoiceDismiss" href="#" style="margin-left: 24px;">Ok</a></div>
+							<div id="cookieChoiceInfo2" style="width: 96%; background: rgb(222, 227, 235) none repeat scroll 0% 0%; margin: 0px auto; left: 0px; bottom: 0px; padding: 15px 2%; color: rgb(0, 0, 0); z-index: 45001; text-align: center;"><span><span style="color:#5f738e">Nous utilisons des <a style="color:#5f738e;text-decoration:underline;" href="http://www.cinepassion.com/cookies.php">cookies</a> pour optimiser votre expérience sur notre site. En utilisant notre site vous acceptez que nous appliquions des cookies</span></span><a id="cookieChoiceDismiss" href="#" style="margin-left: 24px;">Ok</a></div>
 
 
 
 
 
 
-		<footer>
-       <div class="footercontainer">
-				 <div class="row">
-	 				<div class="col-md-1"></div>
-	 				<div class="col-md-2">
-	 					<img src="img/cinepassion-logo.png" alt="" width="45%">
-	 				</div>
-	 				<div class="col-md-4">
-						<div class="input-group stylish-input-group input-append">
-							<input type="text" class="form-control"  placeholder="mail" >
-							<span class="input-group-btn">
-								<button class="btn" type="button">
-									send
-								</button>
-							</span>
-						</div>
-					</div>
+							<footer>
+								<div class="footercontainer">
+									<div class="row">
+										<div class="col-md-1"></div>
+										<div class="col-md-2">
+											<img src="img/cinepassion-logo.png" alt="" width="45%">
+										</div>
+										<div class="col-md-4">
+											<div class="input-group stylish-input-group input-append">
+												<input type="text" class="form-control"  placeholder="mail" >
+												<span class="input-group-btn">
+													<button class="btn" type="button">
+														send
+													</button>
+												</span>
+											</div>
+										</div>
 
-							<div class="col-md-4">
-               <div id="topcontrol" style="bottom: 15px;" ><span class="glyphicon glyphicon-arrow-circle-up"></span></div>
-              </div>
+										<div class="col-md-4">
+											<div id="topcontrol" style="bottom: 15px;" ><span class="glyphicon glyphicon-arrow-circle-up"></span></div>
+										</div>
 
 
-       </div>
-		</footer>
-	</body>
-	</html>
+									</div>
+								</footer>
+							</body>
+							</html>
