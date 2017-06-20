@@ -38,6 +38,7 @@ p{
 	align-items: center;
 	border: 1px solid #BCBCBC;
 	border-radius: 0.3em;
+	padding: 15px;
 }
 
 .une>.thumbnail{
@@ -59,7 +60,7 @@ p{
 
 .btn-group>button, .btn-more{
 	padding: 0.6em 2.5em;
-	background-color: #F2F1F0;
+	background-color: #F3F0F2;
 	border: none;
 }
 
@@ -76,14 +77,128 @@ p{
 	padding: 0;
 }
 
+#featured-movies h5{
+	text-align: center;
+	margin: 0;
+}
 
 /*   ---   SHOP MOVIES   ---   */
 .price{
-	color: #FF9600;
+	color: #FF9200;
+}
+
+.trailer{
+	background-color: #FF9200;
+	font-weight: bold;
+}
+
+.trailer h4{
+	margin: 30px 0;
+}
+
+.trailer .row{
+	margin: 5px 0;
+	font-size: 12px;
+}
+
+.trailer .col-md-3, .trailer .col-md-1{
+	color: #252525;
+	padding: 0;
+}
+
+.trailer .col-md-8{
+	color: white;
+	line-height: 16px;
 }
 
 
 /*   ---   CONTACT US   ---   */
+#contact{
+	margin-bottom: 30px;
+}
+
+.col-contact{
+	width: 100%;
+	height: 200px;
+	color: white;
+	background-color: #252525;
+}
+
+.col-contact>i{
+	position: relative;
+	display: block;
+	top: -0.9em;
+	width: 1.8em;
+	height: 1.8em;
+	font-size: 1.5em;
+	margin: auto;
+	text-align: center;
+	line-height: 1.8em;
+	border-radius: 0.9em;
+	background-color: #FF9200; 
+}
+
+.col-contact a{
+	color: white;
+}
+
+
+.content-contact{
+	position: absolute;
+	top: 0;
+	padding: 10%;
+}
+
+.content-contact ul{
+	list-style: none;
+	font-size: 0.9em;
+	padding-left: 0;
+}
+
+.content-contact li{
+	padding: 6px 0;
+}
+
+.social-media li{
+	padding: 3px 0;
+}
+
+.social-media a{
+	line-height: 30px;
+	display: inline-block;
+}
+
+.social-media i{
+	text-align: center;
+	vertical-align: top;
+	line-height: 31px;
+	width: 30px;
+	background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.social-media h5{
+	display: inline-block;
+	margin: 0;
+	width: 100px;
+	padding-left: 10px;
+	line-height: 30px;
+}
+
+.form-contact{
+	margin-top: 45px;
+}
+
+.form-contact .row{
+	margin-bottom: 20px;
+}
+
+.form-contact .btn{
+	color: white;
+	background-color: #252525;
+	border-radius: 0;
+}
+
 
 
 /*   ---   ICONS ASIDE   ---   */
@@ -91,3 +206,54 @@ aside{
 	position: fixed;
 	top: 20%;
 }
+
+aside a{
+	width: 150px;
+	margin-left: -110px;
+	margin-bottom: 5px;
+	display: block;
+	text-align: right;
+	line-height: 40px;
+	color: white;
+	border-radius: 0 20px 20px 0;
+	transition: margin-left 1s;
+}
+
+aside a:hover{
+	margin-left: 0px;
+	color: white;
+}
+
+aside h5{
+	display: inline-block;
+	font-weight: bold;
+	text-align: center;
+	width: 117.5px;
+}
+
+aside .fa{
+	background-color: white;
+	line-height: 25px;
+	width: 25px;
+	margin-right: 7.5px;
+	color: #252525;
+	text-align: center;
+	border-radius: 12.5px;
+}
+
+.tweet{
+	background-color: #4C84F9;
+}
+
+.fb{
+	background-color: #4F4B95;
+}
+
+.basket{
+	background-color: #F9008A;
+}
+
+.ggl{
+	background-color: #ED3937;
+}
+
