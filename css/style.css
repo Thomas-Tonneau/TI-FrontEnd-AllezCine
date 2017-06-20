@@ -149,3 +149,60 @@
 	padding: 0;
 	bottom: 0;
 }
+#jumbotron .glyphicon-control{
+	background-color:#252525;
+	padding: 0;
+	border-radius: 2vh ;
+	font-size: 20px;
+	line-height: 30px;
+}
+footer .footercontainer {
+	background-color: #252525;
+}
+footer h4{
+	text-align:left;
+	padding:4px;
+	color:#ff9200;
+}
+footer .logo{
+	width:25%;
+  background-color: white;
+}
+footer .mail {
+	padding: 0 ;
+	background-color:;
+	border-bottom: 2px solid;
+	color:white;
+
+}
+footer .input-group {
+	border:1px solid #6b6b6b;
+	padding:4px;
+}
+footer .form-control, footer .btn{
+	padding:2px 12px;
+	height:26px;
+	border-radius: 0;
+}
+footer .btn{
+	background-color: #ff9200;
+	color:white;
+}
+footer .col-md-10{
+	margin: 15px 0;
+}
+footer .row{
+	padding:25px 0;
+
+}
+footer .first-row{
+	border-bottom: 1px solid #6b6b6b;
+}
+footer p{
+	color:#6b6b6b;
+}
+footer a{
+	color:white;
+	font-size: 12px;
+	padding:0 4px;
+}
