@@ -31,6 +31,211 @@ p{
 	}
 }
 
+.no-padding{
+	padding: 0;
+}
+
+#header {
+		background-color: lightblue;
+}
+
+#bouton {
+		background-color	: lightyellow;
+		width: 100px;
+		height: 50px;
+		display: block;
+		border: 1px solid yellow;
+		margin: 5px;
+		text-align: center;
+}
+/* recherche*/
+#recherche {
+	height: 10vh;
+	line-height: 10vh;
+
+}
+#recherche .barre-go{
+	position: relative;
+}
+#recherche .input-group{
+	position:absolute;
+	top:50%;
+  height: 3vh;
+	margin-top: 2.5vh;
+}
+#recherche .input-group input{
+	 border-radius: 3vh 0 0 3vh;
+   background-color: #EFEEEE;
+	 border:none;
+}
+#recherche .input-group span{
+	padding: 0 40px;
+	border-radius: 0 3vh 3vh 0;
+	background-color: #252525;
+	border:none;
+	color:white;
+}
+#recherche .login{
+	background-color: #FF9200;
+	border-radius: 0;
+	color:white;
+	font-weight: bold;
+
+	padding: 7px 30px;
+
+}
+
+/*barre de navigation*/
+#home{
+   background-color: #FF9200;
+	 color:white;
+  border-radius: 0;
+	border:none;
+
+}
+#home a{
+	color:white;
+}
+#home a:hover{
+	background-color: #252525;
+}
+#home .link{
+	border-right: 1px solid white;
+}
+#home .active a{
+	background-color: #252525;
+}
+#home .dropdown-menu{
+	background-color: #FF9200;
+}
+
+/* Jumbotron */
+#jumbotron .item>div{
+	height: 500px;
+}
+#jumbotron .swissarmyman{
+	background-image: url('../img/swissarmyman-carousel.jpg');
+	background-size: cover;
+}
+
+#jumbotron .batman{
+	background-image: url('../img/batman-carousel.jpg');
+	background-size: cover;
+}
+
+#jumbotron .intouchables{
+	background-image: url('../img/intouchables-carousel.jpg');
+	background-size: cover;
+}
+
+#jumbotron .patientanglais{
+	background-image: url('../img/lepatientanglais-carousel.jpg');
+	background-size: cover;
+}
+
+#jumbotron .inception{
+	background-image: url('../img/image.jpeg');
+	background-size: cover;
+}
+
+#jumbotron .hauteur{
+	height: 100px;
+}
+
+#jumbotron .nav>li>a{
+	padding: 0;
+}
+
+#jumbotron .resume{
+	height: 500px;
+}
+
+#jumbotron .resume .row{
+	height: 100px;
+	background-color: #252525;
+	margin: 0;
+}
+
+#jumbotron img{
+	width: 100%;
+}
+
+#jumbotron p{
+	text-align: left;
+	font-size: 10px;
+	padding: 4px;
+	margin: 0;
+	color: white;
+}
+
+#jumbotron h5{
+	text-align: left;
+	padding: 4px;
+	margin: 0;
+	color: #FF9200;
+}
+
+#jumbotron .carousel-caption{
+	padding: 0;
+	bottom: 0;
+}
+#jumbotron .glyphicon-control{
+	background-color:#252525;
+	padding: 0;
+	border-radius: 2vh ;
+	font-size: 20px;
+	line-height: 30px;
+}
+footer .footercontainer {
+	background-color: #252525;
+}
+footer h4{
+	text-align:left;
+	padding:4px;
+	color:#ff9200;
+}
+footer .logo{
+	width:25%;
+  background-color: white;
+}
+footer .mail {
+	padding: 0 ;
+	background-color:;
+	border-bottom: 2px solid;
+	color:white;
+
+}
+footer .input-group {
+	border:1px solid #6b6b6b;
+	padding:4px;
+}
+footer .form-control, footer .btn{
+	padding:2px 12px;
+	height:26px;
+	border-radius: 0;
+}
+footer .btn{
+	background-color: #ff9200;
+	color:white;
+}
+footer .col-md-10{
+	margin: 15px 0;
+}
+footer .row{
+	padding:25px 0;
+
+}
+footer .first-row{
+	border-bottom: 1px solid #6b6b6b;
+}
+footer p{
+	color:#6b6b6b;
+}
+footer a{
+	color:white;
+	font-size: 12px;
+	padding:0 4px;
+}
 
 /*   ---  LA UNE   ---   */ 
 .une{
@@ -256,4 +461,3 @@ aside .fa{
 .ggl{
 	background-color: #ED3937;
 }
-
