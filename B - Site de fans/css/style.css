@@ -10,10 +10,24 @@
   display: inline-block;
 }
 
-#home{
+body{
 	background-image: url('../img/village2.jpg');
-	min-height: 555px;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.all-content{
+	height: 555px;
+}
+
+header .nav-tabs{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+}
+
+header li{
+	background-color: white;
 }
