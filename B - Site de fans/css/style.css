@@ -1,3 +1,15 @@
+#bio{
+  background-image: url('../images/village.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 555px;
+  width: 100%;
+}
+
+#bio li{
+  display: inline-block;
+}
+
 #home{
 	background-image: url('../img/village2.jpg');
 	min-height: 555px;
@@ -5,4 +17,3 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-

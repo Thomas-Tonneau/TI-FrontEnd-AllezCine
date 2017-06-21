@@ -10,6 +10,12 @@
 		<script src="js/jquery-2.2.4.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
+		<script>
+		$(document).ready(function(){
+$('[data-toggle="popover"]').popover();
+});
+
+     </script>
 	</head>
 	<body>
 		<header>
@@ -23,8 +29,38 @@
 		</header>
 		<div class="tab-content">
 			<div id="bio" class="tab-pane fade">
-				Ici va se trouver	la biographie
-			</div>
+				<!--Ici va se trouver	la biographie-->
+				<ul class="personnages">
+   				<li><a href="#"  data-html="true" data-toggle="popover" title="Asterix le gaulois" data-content="
+                       <h2>l'intrépide ,le courageux</h2>
+						           Asterix est né en 85 av JC,c'est le fils de Astronomix et de praline.
+											 Astérix est le plus rusé et le plus intelligent du village.
+						           Obelix ,son ami,est né la même année.Ils sont les deux principaux defenseurs du village.
+
+						          "><img src="images/Asterix-perso.png"/></a>
+						<li><a href="#"  data-html="true" data-toggle="popover" title="Obelix" data-content="
+							     <h2>Quand Obelix etait tombé dans la marmite </h2>
+									 Obelix,c'est le meilleur ami d'Asterix.
+									 Asterix veut faire boire un peu de potion magique à Obelix  .
+									 Les deux enfants se rendent à la hutte du druide assurancetourix.
+									 A l'arrivée du druide,Asterix fait tomber Obelix dans la marmite pour s'enfuir seul...
+										Assurancetourix retrouve Obelix qui a bu la totalité de la marmite de potion magique
+							   "><img src="images/obelix-perso.png"/></a>
+					 <li><a href="#"  data-html="true" data-toggle="popover" title="Panoramix" data-content="
+		 							     <h2>le sage du village </h2>
+											 C'est Panoramix,le vieux druide qui prépare la fameuse potion magique.
+		 							   "><img src="images/Panoramix-perso.png"/></a>
+					 <li><a href="#"  data-html="true" data-toggle="popover" title="assurancetourix" data-content="
+				  		 							     <h2>le barde   </h2>
+																 Pour lui, pas de festin sans musique.
+																 Et à chaque fois qu'il veut jouer sa musique;les gaulois le font taire par tous les moyens
+				  		 							   "><img src="images/assurancetourix-perso.png"/></a>
+  				 <li><a href="#"  data-html="true" data-toggle="popover" title="idefix  " data-content="
+									  		 							     <h2>chien d'obelix   </h2>
+																					 le petit chien écologiste d'obelix est aussi l'ami d'Asterix
+									  		 							   "><img src="images/image.gif"/></a>
+						</ul>
+					 </div>
 			<div id="photos" class="tab-pane fade">
 				<!-- Ici va se trouver	la galerie photo -->
 				<div class="col-md-2"><a data-target="#gallery-modal" data-toggle="modal">
@@ -283,3 +319,4 @@
 	</div>
 </body>
 </html>
+
