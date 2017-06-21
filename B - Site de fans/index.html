@@ -12,14 +12,13 @@
 		<script type="text/javascript" src="js/script.js"></script>
 		<script>
 		$(document).ready(function(){
-$('[data-toggle="popover"]').popover();
-});
-
-     </script>
+			$('[data-toggle="popover"]').popover();
+		});
+		</script>
 	</head>
 	<body>
 		<header>
-			<ul class="nav nav-tabs text-center">
+			<ul class="nav nav-tabs text-center row">
 				<li><a data-toggle="tab" href="#bio">Biographie</a></li>
 				<li><a data-toggle="tab" href="#photos">Galerie</a></li>
 				<li class="active"><a data-toggle="tab" href="#home"><img src="img/600px-Asterix.png" alt="logo-asterix" width="50%"></a></li>
@@ -27,40 +26,39 @@ $('[data-toggle="popover"]').popover();
 				<li><a data-toggle="tab" href="#contact">Contactez-nous</a></li>
 			</ul>
 		</header>
-		<div class="tab-content">
+		<div class="tab-content all-content">
 			<div id="bio" class="tab-pane fade">
 				<!--Ici va se trouver	la biographie-->
 				<ul class="personnages">
-   				<li><a href="#"  data-html="true" data-toggle="popover" title="Asterix le gaulois" data-content="
-                       <h2>l'intrépide ,le courageux</h2>
-						           Asterix est né en 85 av JC,c'est le fils de Astronomix et de praline.
-											 Astérix est le plus rusé et le plus intelligent du village.
-						           Obelix ,son ami,est né la même année.Ils sont les deux principaux defenseurs du village.
-
-						          "><img src="images/Asterix-perso.png"/></a>
-						<li><a href="#"  data-html="true" data-toggle="popover" title="Obelix" data-content="
-							     <h2>Quand Obelix etait tombé dans la marmite </h2>
-									 Obelix,c'est le meilleur ami d'Asterix.
-									 Asterix veut faire boire un peu de potion magique à Obelix  .
-									 Les deux enfants se rendent à la hutte du druide assurancetourix.
-									 A l'arrivée du druide,Asterix fait tomber Obelix dans la marmite pour s'enfuir seul...
-										Assurancetourix retrouve Obelix qui a bu la totalité de la marmite de potion magique
-							   "><img src="images/obelix-perso.png"/></a>
-					 <li><a href="#"  data-html="true" data-toggle="popover" title="Panoramix" data-content="
-		 							     <h2>le sage du village </h2>
-											 C'est Panoramix,le vieux druide qui prépare la fameuse potion magique.
-		 							   "><img src="images/Panoramix-perso.png"/></a>
-					 <li><a href="#"  data-html="true" data-toggle="popover" title="assurancetourix" data-content="
-				  		 							     <h2>le barde   </h2>
-																 Pour lui, pas de festin sans musique.
-																 Et à chaque fois qu'il veut jouer sa musique;les gaulois le font taire par tous les moyens
-				  		 							   "><img src="images/assurancetourix-perso.png"/></a>
-  				 <li><a href="#"  data-html="true" data-toggle="popover" title="idefix  " data-content="
-									  		 							     <h2>chien d'obelix   </h2>
-																					 le petit chien écologiste d'obelix est aussi l'ami d'Asterix
-									  		 							   "><img src="images/image.gif"/></a>
-						</ul>
-					 </div>
+					<li><a href="#"  data-html="true" data-toggle="popover" title="Asterix le gaulois" data-content="
+						<h2>l'intrépide ,le courageux</h2>
+						Asterix est né en 85 av JC,c'est le fils de Astronomix et de praline.
+						Astérix est le plus rusé et le plus intelligent du village.
+						Obelix ,son ami,est né la même année.Ils sont les deux principaux defenseurs du village.
+					"><img src="images/Asterix-perso.png"/></a>
+					<li><a href="#"  data-html="true" data-toggle="popover" title="Obelix" data-content="
+						<h2>Quand Obelix etait tombé dans la marmite </h2>
+						Obelix,c'est le meilleur ami d'Asterix.
+						Asterix veut faire boire un peu de potion magique à Obelix  .
+						Les deux enfants se rendent à la hutte du druide assurancetourix.
+						A l'arrivée du druide,Asterix fait tomber Obelix dans la marmite pour s'enfuir seul...
+						Assurancetourix retrouve Obelix qui a bu la totalité de la marmite de potion magique
+					"><img src="images/obelix-perso.png"/></a>
+					<li><a href="#"  data-html="true" data-toggle="popover" title="Panoramix" data-content="
+						<h2>le sage du village </h2>
+						C'est Panoramix,le vieux druide qui prépare la fameuse potion magique.
+					"><img src="images/Panoramix-perso.png"/></a>
+					<li><a href="#"  data-html="true" data-toggle="popover" title="assurancetourix" data-content="
+						<h2>le barde   </h2>
+						Pour lui, pas de festin sans musique.
+						Et à chaque fois qu'il veut jouer sa musique;les gaulois le font taire par tous les moyens
+					"><img src="images/assurancetourix-perso.png"/></a>
+					<li><a href="#"  data-html="true" data-toggle="popover" title="idefix  " data-content="
+						<h2>chien d'obelix   </h2>
+						le petit chien écologiste d'obelix est aussi l'ami d'Asterix
+					"><img src="images/image.gif"/></a>
+				</ul>
+			</div>
 			<div id="photos" class="tab-pane fade">
 				<!-- Ici va se trouver	la galerie photo -->
 				<div class="col-md-2"><a data-target="#gallery-modal" data-toggle="modal">
@@ -106,12 +104,6 @@ $('[data-toggle="popover"]').popover();
 							<div class="modal-body">
 								<div class="container">
 									<div id="gallery-carousel" class="carousel slide" data-ride="carousel">
-										<!-- Indicators -->
-										<ol class="carousel-indicators">
-											<li data-target="#gallery-carousel" data-slide-to="0" class="active"></li>
-											<li data-target="#gallery-carousel" data-slide-to="1"></li>
-											<li data-target="#gallery-carousel" data-slide-to="2"></li>
-										</ol>
 										<!-- Wrapper for slides -->
 										<div class="carousel-inner">
 											<div class="item active">
@@ -160,163 +152,174 @@ $('[data-toggle="popover"]').popover();
 									</a>
 								</div>
 							</div>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<div class="modal-footer">
+								<!-- Indicators -->
+									<ol class="nav row">
+										<li class="col-md-2" data-target="#gallery-carousel" data-slide-to="0" class="active"><img src="img/Asterix-le-Gaulois-bd-home.jpg" alt=""></li>
+										<li class="col-md-2" data-target="#gallery-carousel" data-slide-to="1"><img src="img/tour-de-gaule-home.jpg" alt=""></li>
+										<li class="col-md-2" data-target="#gallery-carousel" data-slide-to="2"><img src="img/chez-les-belges-bd-home.jpg" alt=""></li>
+										<li class="col-md-2" data-target="#gallery-carousel" data-slide-to="3"><img src="img/asterix-legionnaire-bd-home.jpg" alt=""></li>
+										<li class="col-md-2" data-target="#gallery-carousel" data-slide-to="4"><img src="img/12-travaux-tv-home.jpg" alt=""></li>
+										<li class="col-md-2" data-target="#gallery-carousel" data-slide-to="5"><img src="img/Asterix-et-les-Vikings-tv-home.jpg" alt=""></li>
+										<li class="col-md-2" data-target="#gallery-carousel" data-slide-to="6"><img src="img/domaine-des-dieux-tv-home.jpg" alt=""></li>
+										<li class="col-md-2" data-target="#gallery-carousel" data-slide-to="7"><img src="img/Asterix-et-Obelix-Contre-Cesar-cine-home.jpg" alt=""></li>
+										<li class="col-md-2" data-target="#gallery-carousel" data-slide-to="8"><img src="img/mission-cleopatre-cine-home.jpg" alt=""></li>
+										<li class="col-md-2" data-target="#gallery-carousel" data-slide-to="9"><img src="img/jeux-olympiques-cine-home.jpg" alt=""></li>
+										<li class="col-md-2" data-target="#gallery-carousel" data-slide-to="10"><img src="img/au-service-majeste-cine-home.jpg" alt=""></li>
+									</ol>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="home" class="tab-pane fade in active">
-			<!-- Ici va se trouver	la présentation -->
-			<div class="container">
-				<div class="row">
-					<div class="col-md-9">
-						<div class="tab-content">
-							<div id="gaulois" class="tab-pane fade text-center">
-								<div class="panel">
-									<div class="panel-heading">Astérix le Gaulois</div>
-									<div class="panel-body">
-										<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
-										<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+			<div id="home" class="tab-pane fade in active">
+				<!-- Ici va se trouver	la présentation -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-9">
+							<div class="tab-content">
+								<div id="gaulois" class="tab-pane fade text-center">
+									<div class="panel">
+										<div class="panel-heading">Astérix le Gaulois</div>
+										<div class="panel-body">
+											<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
+											<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div id="tour-gaule" class="tab-pane fade">
-								<div class="panel">
-									<div class="panel-heading">Astérix le Gaulois</div>
-									<div class="panel-body">
-										<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
-										<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+								<div id="tour-gaule" class="tab-pane fade">
+									<div class="panel">
+										<div class="panel-heading">Astérix le Gaulois</div>
+										<div class="panel-body">
+											<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
+											<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div id="belges" class="tab-pane fade">
-								<div class="panel">
-									<div class="panel-heading">Astérix le Gaulois</div>
-									<div class="panel-body">
-										<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
-										<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+								<div id="belges" class="tab-pane fade">
+									<div class="panel">
+										<div class="panel-heading">Astérix le Gaulois</div>
+										<div class="panel-body">
+											<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
+											<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div id="legionnaire" class="tab-pane fade">
-								<div class="panel">
-									<div class="panel-heading">Astérix le Gaulois</div>
-									<div class="panel-body">
-										<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
-										<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+								<div id="legionnaire" class="tab-pane fade">
+									<div class="panel">
+										<div class="panel-heading">Astérix le Gaulois</div>
+										<div class="panel-body">
+											<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
+											<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div id="travaux" class="tab-pane fade">
-								<div class="panel">
-									<div class="panel-heading">Astérix le Gaulois</div>
-									<div class="panel-body">
-										<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
-										<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+								<div id="travaux" class="tab-pane fade">
+									<div class="panel">
+										<div class="panel-heading">Astérix le Gaulois</div>
+										<div class="panel-body">
+											<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
+											<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div id="vikings" class="tab-pane fade">
-								<div class="panel">
-									<div class="panel-heading">Astérix le Gaulois</div>
-									<div class="panel-body">
-										<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
-										<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+								<div id="vikings" class="tab-pane fade">
+									<div class="panel">
+										<div class="panel-heading">Astérix le Gaulois</div>
+										<div class="panel-body">
+											<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
+											<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div id="domaine" class="tab-pane fade">
-								<div class="panel">
-									<div class="panel-heading">Astérix le Gaulois</div>
-									<div class="panel-body">
-										<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
-										<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+								<div id="domaine" class="tab-pane fade">
+									<div class="panel">
+										<div class="panel-heading">Astérix le Gaulois</div>
+										<div class="panel-body">
+											<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
+											<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div id="cesar" class="tab-pane fade">
-								<div class="panel">
-									<div class="panel-heading">Astérix le Gaulois</div>
-									<div class="panel-body">
-										<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
-										<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+								<div id="cesar" class="tab-pane fade">
+									<div class="panel">
+										<div class="panel-heading">Astérix le Gaulois</div>
+										<div class="panel-body">
+											<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
+											<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div id="cleopatre" class="tab-pane fade">
-								<div class="panel">
-									<div class="panel-heading">Astérix le Gaulois</div>
-									<div class="panel-body">
-										<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
-										<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+								<div id="cleopatre" class="tab-pane fade">
+									<div class="panel">
+										<div class="panel-heading">Astérix le Gaulois</div>
+										<div class="panel-body">
+											<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
+											<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div id="jo" class="tab-pane fade">
-								<div class="panel">
-									<div class="panel-heading">Astérix le Gaulois</div>
-									<div class="panel-body">
-										<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
-										<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+								<div id="jo" class="tab-pane fade">
+									<div class="panel">
+										<div class="panel-heading">Astérix le Gaulois</div>
+										<div class="panel-body">
+											<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
+											<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div id="majeste" class="tab-pane fade">
-								<div class="panel">
-									<div class="panel-heading">Astérix le Gaulois</div>
-									<div class="panel-body">
-										<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
-										<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+								<div id="majeste" class="tab-pane fade">
+									<div class="panel">
+										<div class="panel-heading">Astérix le Gaulois</div>
+										<div class="panel-body">
+											<img class="pull-right" src="img/Asterix-le-Gaulois-bd-home.jpg" alt="">
+											<p>Dans un petit village d' Armorique, Astérix va s'adonner à son sport favori : la Chasse. Pendant ce temps, les romains, tente de résoudre le mystère de la puissance des gaulois. C'est ainsi que le légionnaire Caligula Minus est désigné volontaire pour se déguiser en gaulois, et découvre ainsi le secret de la puissance du village, la potion magique, qui donne une force surhumain à quiconque la boit. Pour se débarrasser des Gaulois, le centurion Caius Bonus fait capturer le druide, pour apprendre le secret de la potion magique, et ainsi prendre par la même occasion la place de César.</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						<div class="col-md-3">
+							<ul class="nav nav-pills nav-stacked">
+								<li><a data-toggle="pill" href="#">Astérix</a></li>
+								<li>
+									<a data-toggle="collapse" href="#bd">BD <span class="caret"></span></a>
+									<ul id="bd" class="collapse">
+										<li><a data-toggle="pill" href="#gaulois">Astérix le Gaulois</a></li>
+										<li><a data-toggle="pill" href="#tour-gaule">Le Tour de Gaule d'Astérix</a></li>
+										<li><a data-toggle="pill" href="#belges">Astérix chez les Belges</a></li>
+										<li><a data-toggle="pill" href="#legionnaire">Astérix Légionnaire</a></li>
+									</ul>
+								</li>
+								<li>
+									<a data-toggle="collapse" href="#tv">TV <span class="caret"></span></a>
+									<ul id="tv" class="collapse">
+										<li><a data-toggle="pill" href="#travaux">Les 12 Travaux d'Astérix</a></li>
+										<li><a data-toggle="pill" href="#vikings">Astérix et les Vikings</a></li>
+										<li><a data-toggle="pill" href="#domaine">Astérix : Le Domaine des Dieux</a></li>
+									</ul>
+								</li>
+								<li>
+									<a data-toggle="collapse" href="#cine">Cinéma <span class="caret"></span></a>
+									<ul id="cine" class="collapse">
+										<li><a data-toggle="pill" href="#cesar">Astérix et Obélix contre César</a></li>
+										<li><a data-toggle="pill" href="#cleopatre">Astérix et Obélix : Mission Cléopâtre</a></li>
+										<li><a data-toggle="pill" href="#jo">Astérix aux Jeux Olympiques</a></li>
+										<li><a data-toggle="pill" href="#majeste">Astérix et Obélix : Au Service de Sa Majesté</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						
 					</div>
-					<div class="col-md-3">
-						<ul class="nav nav-pills nav-stacked">
-							<li><a data-toggle="pill" href="#">Astérix</a></li>
-							<li>
-								<a data-toggle="collapse" href="#bd">BD <span class="caret"></span></a>
-								<ul id="bd" class="collapse">
-									<li><a data-toggle="pill" href="#gaulois">Astérix le Gaulois</a></li>
-									<li><a data-toggle="pill" href="#tour-gaule">Le Tour de Gaule d'Astérix</a></li>
-									<li><a data-toggle="pill" href="#belges">Astérix chez les Belges</a></li>
-									<li><a data-toggle="pill" href="#legionnaire">Astérix Légionnaire</a></li>
-								</ul>
-							</li>
-							<li>
-								<a data-toggle="collapse" href="#tv">TV <span class="caret"></span></a>
-								<ul id="tv" class="collapse">
-									<li><a data-toggle="pill" href="#travaux">Les 12 Travaux d'Astérix</a></li>
-									<li><a data-toggle="pill" href="#vikings">Astérix et les Vikings</a></li>
-									<li><a data-toggle="pill" href="#domaine">Astérix : Le Domaine des Dieux</a></li>
-								</ul>
-							</li>
-							<li>
-								<a data-toggle="collapse" href="#cine">Cinéma <span class="caret"></span></a>
-								<ul id="cine" class="collapse">
-									<li><a data-toggle="pill" href="#cesar">Astérix et Obélix contre César</a></li>
-									<li><a data-toggle="pill" href="#cleopatre">Astérix et Obélix : Mission Cléopâtre</a></li>
-									<li><a data-toggle="pill" href="#jo">Astérix aux Jeux Olympiques</a></li>
-									<li><a data-toggle="pill" href="#majeste">Astérix et Obélix : Au Service de Sa Majesté</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-					
 				</div>
 			</div>
+			<div id="shop" class="tab-pane fade">
+				Ici va se trouver	la boutique
+			</div>
+			<div id="contact" class="tab-pane fade">
+				Ici va se trouver	le contact
+			</div>
 		</div>
-		<div id="shop" class="tab-pane fade">
-			Ici va se trouver	la boutique
-		</div>
-		<div id="contact" class="tab-pane fade">
-			Ici va se trouver	le contact
-		</div>
-	</div>
-</body>
+	</body>
 </html>
-
