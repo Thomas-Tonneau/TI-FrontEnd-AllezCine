@@ -44,10 +44,38 @@ p{
 		margin: 5px;
 		text-align: center;
 }
+
+/*   ---   HEADER   ---   */
+/* cookie */
+#cookie{
+	width: 100%;
+	background: rgb(222, 227, 235) none repeat scroll 0% 0%;
+	margin: 0px auto;
+	left: 0px;
+	bottom: 0px;
+	padding: 15px 2%;
+	color: rgb(0, 0, 0);
+	z-index: 3;
+	text-align: center;
+}
+
+#cookie .cookie-span{
+	color:#5f738e;
+}
+
+#cookie .cookie-link{
+	color: #5F738E;
+	text-decoration: underline;
+}
+
+#cookie-dismiss{
+	margin-left: 24px;
+}
+
 /* recherche*/
 #recherche {
-	height: 10vh;
-	line-height: 10vh;
+	height: 80px;
+	line-height: 80px;
 
 }
 #recherche .barre-go{
@@ -56,8 +84,7 @@ p{
 #recherche .input-group{
 	position:absolute;
 	top:50%;
-  height: 3vh;
-	margin-top: 2.5vh;
+	margin-top: 25px;
 }
 #recherche .input-group input{
 	 border-radius: 3vh 0 0 3vh;
@@ -87,15 +114,24 @@ p{
 	 color:white;
   border-radius: 0;
 	border:none;
+	margin: 0;
 
 }
+
 #home a{
 	color:white;
 }
+
 #home a:hover{
 	background-color: #252525;
 }
+
+#home ul{
+	width: 100%;
+}
+
 #home .link{
+	width: 16%;
 	border-right: 1px solid white;
 }
 #home .active a{
@@ -171,10 +207,10 @@ p{
 	color: #FF9200;
 }
 
-#jumbotron .carousel-caption{
-	padding: 0;
-	bottom: 0;
+#jumbotron .carousel-caption {
+	
 }
+
 #jumbotron .glyphicon-control{
 	background-color:#252525;
 	padding: 0;
