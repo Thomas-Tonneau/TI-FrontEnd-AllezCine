@@ -114,6 +114,7 @@ p{
 	 color:white;
   border-radius: 0;
 	border:none;
+	margin: 0;
 
 }
 
@@ -206,10 +207,10 @@ p{
 	color: #FF9200;
 }
 
-#jumbotron .carousel-caption{
-	padding: 0;
-	bottom: 0;
+#jumbotron .carousel-caption {
+	
 }
+
 #jumbotron .glyphicon-control{
 	background-color:#252525;
 	padding: 0;
