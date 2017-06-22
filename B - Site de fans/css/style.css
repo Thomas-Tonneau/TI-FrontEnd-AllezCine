@@ -9,6 +9,10 @@
 #bio li{
   display: inline-block;
 }
+#bio img{
+  width: 200px;
+  height: 200px;
+}
 
 #home{
 	background-image: url('../img/village2.jpg');
