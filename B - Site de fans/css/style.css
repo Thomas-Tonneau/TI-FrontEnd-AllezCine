@@ -28,14 +28,15 @@ header .nav-tabs{
 }
 
 #logo-asterix{
-	background: none;
-	border: none;
+	background-color: #89AF13;
+	border-width: 0px;
+	border-radius: 20px;
 	padding-left: 20px;
 }
 
 .active>#logo-asterix{
-	background-color: white;	
-  border-radius: 20px;
+	background-color: #89AF13;
+	border-radius: 20px;
 }
 
 .nav-tabs>li>a{
@@ -51,7 +52,7 @@ header a:hover{
 }
 
 .nav-tabs>li{
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(137, 175, 19, 0.8);
 
 }
 
@@ -68,9 +69,13 @@ header a:hover{
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus{
-	background-color: white;
+	background-color: #89AF13;
 	color: #AC000E;
+	border:none;
 }
+
+/*   ---   HOME   ---   */
+
 
 /*   ---   BIO   ---   */
 #bio{
