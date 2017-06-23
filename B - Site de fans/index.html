@@ -17,6 +17,8 @@
 		</script>
 	</head>
 	<body>
+
+
 		<div class="all-content">
 			<header>
 				<nav class="navbar">
@@ -42,35 +44,33 @@
 			<div class="tab-content">
 				<div id="bio" class="tab-pane fade">
 					<!--Ici va se trouver	la biographie-->
-					<ul class="personnages">
-						<li><a href="#"  data-html="true" data-toggle="popover" title="Asterix le gaulois" data-content="
-							<h2>l'intrépide ,le courageux</h2>
-							Asterix est né en 85 av JC,c'est le fils de Astronomix et de praline.
-							Astérix est le plus rusé et le plus intelligent du village.
-							Obelix ,son ami,est né la même année.Ils sont les deux principaux defenseurs du village.
-						"><img src="images/Asterix-perso.png"/></a></li>
-						<li><a href="#"  data-html="true" data-toggle="popover" title="Obelix" data-content="
-							<h2>Quand Obelix etait tombé dans la marmite </h2>
-							Obelix,c'est le meilleur ami d'Asterix.
-							Asterix veut faire boire un peu de potion magique à Obelix  .
-							Les deux enfants se rendent à la hutte du druide assurancetourix.
-							A l'arrivée du druide,Asterix fait tomber Obelix dans la marmite pour s'enfuir seul...
-							Assurancetourix retrouve Obelix qui a bu la totalité de la marmite de potion magique
-						"><img src="images/obelix-perso.png"/></a></li>
-						<li><a href="#"  data-html="true" data-toggle="popover" title="Panoramix" data-content="
-							<h2>le sage du village </h2>
-							C'est Panoramix,le vieux druide qui prépare la fameuse potion magique.
-						"><img src="images/Panoramix-perso.png"/></a></li>
-						<li><a href="#"  data-html="true" data-toggle="popover" title="assurancetourix" data-content="
-							<h2>le barde   </h2>
-							Pour lui, pas de festin sans musique.
-							Et à chaque fois qu'il veut jouer sa musique;les gaulois le font taire par tous les moyens
-						"><img src="images/assurancetourix-perso.png"/></a></li>
-						<li><a href="#"  data-html="true" data-toggle="popover" title="idefix  " data-content="
-							<h2>chien d'obelix   </h2>
-							le petit chien écologiste d'obelix est aussi l'ami d'Asterix
-						"><img src="images/image.gif"/></a></li>
-					</ul>
+					<a id="panoramix" href="#" data-trigger="hover" data-placement="top" data-html="true" data-toggle="popover" title="Panoramix" data-content="
+				 <h2>le sage du village </h2>
+				 C'est Panoramix,le vieux druide qui prépare la fameuse potion magique.
+			 "><img  src="images/Panoramix-perso.png"/></a>
+					<a id="asterix" href="#" data-trigger="hover" data-placement="top" data-html="true" data-toggle="popover" title="Asterix le gaulois" data-content="
+						<h2>l'intrépide ,le courageux</h2>
+						Asterix est né en 85 av JC,c'est le fils de Astronomix et de praline.
+						Astérix est le plus rusé et le plus intelligent du village.
+						Obelix ,son ami,est né la même année.Ils sont les deux principaux defenseurs du village.
+					"><img  src="images/Asterix-perso.png"/></a>
+					<a id="obelix" href="#" data-trigger="hover" data-placement="top" data-html="true" data-toggle="popover" title="Obelix" data-content="
+						<h2>Quand Obelix etait tombé dans la marmite </h2>
+						Obelix,c'est le meilleur ami d'Asterix.
+						Asterix veut faire boire un peu de potion magique à Obelix  .
+						Les deux enfants se rendent à la hutte du druide assurancetourix.
+						A l'arrivée du druide,Asterix fait tomber Obelix dans la marmite pour s'enfuir seul...
+						Assurancetourix retrouve Obelix qui a bu la totalité de la marmite de potion magique
+					"><img  src="images/obelix-perso.png"/></a>
+						<a id="assurancetourix" href="#" data-trigger="hover" data-placement="top" data-html="true" data-toggle="popover" title="assurancetourix" data-content="
+						<h2>le barde   </h2>
+						Pour lui, pas de festin sans musique.
+						Et à chaque fois qu'il veut jouer sa musique;les gaulois le font taire par tous les moyens
+					"><img  src="images/assurancetourix-perso.png"/></a>
+					<a id="idefix" href="#" data-trigger="hover" data-placement="top" data-html="true" data-toggle="popover" title="idefix  " data-content="
+						<h2>chien d'obelix   </h2>
+						le petit chien écologiste d'obelix est aussi l'ami d'Asterix
+					"><img  src="images/image.gif"/></a>
 				</div>
 				<div id="photos" class="tab-pane fade">
 					<!-- Ici va se trouver	la galerie photo -->
@@ -433,12 +433,38 @@
 							<p></p>
 							<strong></strong>
 						</div>
-					</form>
+           </form>
+				</div>
+			</div>
+
+			
+			<div id="contact" class="tab-pane fade">
+				<!--Ici va se trouver	le contact-->
+				<form class="form-contact" action="index.html" method="post">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-1">
+					<input class="form-control" type="text" placeholder="FIRST NAME" value="">
+				    </div>
+						<div class="col-md-5"></div>
+					</div>
+						<div class="row">
+							<div class="col-md-6 col-md-offset-1">
+					<input class="form-control" type="text" placeholder="LAST NAME" value="">
+				</div>
+				<div class="col-md-5"></div>
+			</div>
+			    <div class="row">
+						<div class="col-md-6 col-md-offset-1">
+					<input class="form-control" type="text" placeholder="EMAIL" value="">
+				</div>
+				<div class="col-md-5"></div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<textarea class="form-control" rows="5" placeholder="YOUR MESSAGE"></textarea>
 					</div>
 				</div>
-				<div id="contact" class="tab-pane fade">
-					Ici va se trouver	le contact
-				</div>
+					<button class="btn" type="submit">SEND MESSAGE</button>
+				</form>
 			</div>
 		</div>
 	</body>
