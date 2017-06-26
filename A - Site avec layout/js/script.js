@@ -2,9 +2,10 @@ $(document).ready(function () {
 
 	$('btn-less').hide();
 
+	var displayed = false;
 	$(window).scroll(function () {
 		var scroll = $(window).scrollTop();
-		if(scroll >= 130){
+		if(scroll >= 130 && !displayed){
 			var backToTop = document.createElement('a');
 			backToTop.id = 'go-top';
 			backToTop.href = "#recherche";
@@ -12,6 +13,11 @@ $(document).ready(function () {
 			var backToTopIcon = document.createElement('i');
 			backToTopIcon.setAttribute('aria-hidden', "true");
 			backToTopIcon.className = "fa fa-arrow-up";
+			document.getElementById('go-top').appendChild(backToTopIcon);
+			displayed=true;
+		} else if(scroll < 130 && displayed){
+			displayed=false;
+			document.getElementById('go-top').remove();
 		}
 	})
 
