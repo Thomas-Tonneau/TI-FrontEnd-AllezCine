@@ -1,0 +1,72 @@
+.container{
+	width: 650px;
+	height: 1200px;
+	margin: 0 auto;
+}
+
+header{
+	text-align: right;
+}
+
+.bande{
+	width: 650px;
+	height: 200px;
+	padding: 1%;
+}
+
+.case{
+	background-color: green;
+	border: 1px solid black;
+	height: 100%;
+	margin: 1%;
+	display: inline-block;
+}
+
+.bande.une>.une{
+	width: 25%;
+}
+
+.bande.une>.deux{
+	width: 68%;
+}
+
+.bande.deux>.une{
+	width: 35%;
+}
+
+.bande.deux>.deux{
+	width: 26%;
+}
+
+.bande.deux>.trois{
+	width: 29%;
+}
+
+.bande.trois>.une{
+	width: 27%;
+}
+
+.bande.trois>.deux{
+	width: 28%;
+}
+
+.bande.trois>.trois{
+	width: 35%;
+}
+
+.bande.quatre>.une{
+	width: 25%;
+}
+
+.bande.quatre>.deux{
+	width: 40%;
+}
+
+.bande.quatre>.trois{
+	width: 25%;
+}
+
+footer{
+	padding: 10px;
+	text-align: right;
+}
