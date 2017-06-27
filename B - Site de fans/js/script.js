@@ -1,3 +1,7 @@
+
+
+
+
 $(document).ready(function(){
     var $nom = $('.nom');
     var $prenom = $('.prenom');
@@ -64,7 +68,7 @@ $(document).ready(function(){
             borderColor : '#ccc',
             color : '#555'
         });
-        $erreur.css('display', 'none'); // on prend soin de cacher le message d'erreur
+        $erreur.hide(); // on prend soin de cacher le message d'erreur
     });
     function verifier(champ){
         if(champ.val() == null){ // si le champ est vide
@@ -75,20 +79,4 @@ $(document).ready(function(){
             });
         }
     }
-  
-	$('#left-radius').click(function () {
-		$('body').css('background-image', 'url(images/village.jpeg)');
-	});
-	$('ul.nav-tabs>li').slice(1).click(function () {
-		$('body').css('background-image', 'url(img/village2.jpg)');
-	});
-
-	$('.shop-item').change(function () {
-		var item = $(this);
-		var nameItem = item.attr('name');
-		$('#total-panier').append(function (n) {
-			return "<p>" + item.val() + " " + nameItem + "</p>";
-		});
-	});
-  
 });

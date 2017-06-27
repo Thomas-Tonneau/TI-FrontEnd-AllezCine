@@ -1,3 +1,13 @@
+
+
+function verifyage(){
+      var age=parseInt(prompt("Quel âge avez-vous ? : "));
+      if (age<18){
+        document.location.href="../B\ -\ Site\ de\ fans/index.html";
+      }
+}
+
+
 $(document).ready(function () {
 
 	$('btn-less').hide();
@@ -26,7 +36,7 @@ $(document).ready(function () {
 	var id = setInterval(progressCrsl, 30);
 	function progressCrsl () {
 		$('.progress-bar').css("width", width + '%');
-		width+=0.5; 
+		width+=0.5;
 		if(width>100){
 			width=0;
 			$('#myCarousel').carousel("next");
@@ -39,7 +49,7 @@ $(document).ready(function () {
 			}
 		}
 	}
-	// stop la barre de progression quand la souris passe sur 
+	// stop la barre de progression quand la souris passe sur
 	// le carousel
 	$('#myCarousel').hover(
 		function () {
@@ -49,7 +59,7 @@ $(document).ready(function () {
 			id = setInterval(progressCrsl, 30);
 		}
 	);
-	
+
 	// change la vue du carousel
 	$('.carousel-nav').click(function () {
 		width = 0;
@@ -93,7 +103,7 @@ $(document).ready(function () {
 		}else{
 			$('.featured-movies>.col-md-2').hide();
 			if(filtre.length>12){
-				$(filtre).slice(0, 12).show();	
+				$(filtre).slice(0, 12).show();
 			}else{
 				$(filtre).show();
 			}
