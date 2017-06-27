@@ -5,7 +5,7 @@ $(document).ready(function () {
 	var displayed = false;
 	$(window).scroll(function () {
 		var scroll = $(window).scrollTop();
-		if(scroll >= 130 && !displayed){
+		if(scroll >= 200 && !displayed){
 			var backToTop = document.createElement('a');
 			backToTop.id = 'go-top';
 			backToTop.href = "#recherche";
@@ -15,7 +15,7 @@ $(document).ready(function () {
 			backToTopIcon.className = "fa fa-arrow-up";
 			document.getElementById('go-top').appendChild(backToTopIcon);
 			displayed=true;
-		} else if(scroll < 130 && displayed){
+		} else if(scroll < 200 && displayed){
 			displayed=false;
 			document.getElementById('go-top').remove();
 		}
