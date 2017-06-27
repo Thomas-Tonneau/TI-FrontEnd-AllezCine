@@ -128,5 +128,8 @@ $(document).ready(function(){
         $('#total').text(total+'€');
     });
 
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    });
   
 });
