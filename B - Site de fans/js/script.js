@@ -86,9 +86,24 @@ $(document).ready(function(){
 	$('.shop-item').change(function () {
 		var item = $(this);
 		var nameItem = item.attr('name');
-		$('#total-panier').append(function (n) {
-			return "<p>" + item.val() + " " + nameItem + "</p>";
-		});
+        var idItem = item.attr('id');
+        var idItemPanier = $('#' + idItem + '-panier');
+        var price = parseFloat($('.' + idItem).text().replace('€', ''));
+        var countItems = item.val();
+        if(idItemPanier.length){
+            idItemPanier.text(function () {
+                return nameItem + " " + item.val();
+            });
+        }else{
+            $('#total-panier').prepend(function () {
+                return "<p id=\"" + idItem + "-panier\">" + nameItem + " " + item.val() + "</p>";
+            });
+        }
+        $('#' + idItem + '-panier').append(function () {
+            return "<span class=\"money\">" + price*countItems + "€</span>";
+        });
+        
 	});
+
   
 });

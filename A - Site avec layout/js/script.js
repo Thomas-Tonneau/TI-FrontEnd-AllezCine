@@ -1,3 +1,7 @@
+function verifyAge(){
+	var age = prompt("L'accès à ce site est limité aux moins de 18 ans, entrez votre âge : ");
+}
+
 $(document).ready(function () {
 
 	$('btn-less').hide();
@@ -88,6 +92,8 @@ $(document).ready(function () {
 		$(this).addClass("active");
 		var filtre = '.' + $(this).text().toLowerCase();
 		if(filtre == ".all"){
+			$('.btn-less').hide();
+			$('.btn-more').show();
 			$('.featured-movies>.col-md-2').hide();
 			$('.featured-movies>.col-md-2').slice(0, 12).show();
 		}else{

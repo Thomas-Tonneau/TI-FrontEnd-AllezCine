@@ -194,9 +194,20 @@ position: absolute;
   color: #EE0013;
 }
 
+.panier{
+  background-color: #EEE;
+  padding: 0;
+  border-radius: 4px;
+}
+
 #panier{
   background-color: black;
   color: #EE0013;
+  width: 100%;
+}
+
+#total-panier span{
+  float: right;
 }
 
 /*   ---   CONTACT   ---   */
