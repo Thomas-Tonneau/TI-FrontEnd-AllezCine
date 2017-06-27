@@ -10,11 +10,6 @@
 		<script src="js/jquery-2.2.4.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
-		<script>
-		$(document).ready(function(){
-			$('[data-toggle="popover"]').popover();
-		});
-		</script>
 	</head>
 	<body>
 		<div class="all-content">
@@ -34,11 +29,11 @@
 						</div>
 					</div>
 				</nav>
-				
+
 			</header>
 			<div class="tab-content">
 				<div id="bio" class="tab-pane fade">
-					<!--Ici va se trouver	la biographie-->
+					<!-- Ici va se trouver	la biographie -->
 					<a id="panoramix" href="#" data-trigger="hover" data-placement="top" data-html="true" data-toggle="popover" title="Panoramix" data-content="
 						<h2>le sage du village </h2>
 						C'est Panoramix,le vieux druide qui prepare la fameuse potion magique.
@@ -330,6 +325,7 @@
 						</div>
 					</div>
 				</div>
+			</div>
 				<div id="shop" class="tab-pane fade">
 					<!-- Ici va se trouver	la boutique -->
 					<div class="container-fluid">
@@ -444,26 +440,53 @@
 							</div>
 							<div class="col-md-5"></div>
 						</div>
-						<div class="row">
-							<div class="col-md-6 col-md-offset-1">
-								<input class="form-control" type="text" placeholder="PRENOM" value="">
-							</div>
-							<div class="col-md-5"></div>
+						<div class="col-md-2">
+							<button>Panier</button>
+							<table>
+
+							</table>
+							<strong></strong>
+							<h4></h4>
+							<p></p>
+							<strong></strong>
 						</div>
-						<div class="row">
-							<div class="col-md-6 col-md-offset-1">
-								<input class="form-control" type="text" placeholder="EMAIL" value="">
-							</div>
-							<div class="col-md-5"></div>
-							<div class="row">
-								<div class="col-md-10 col-md-offset-1">
-									<textarea class="form-control" rows="5" placeholder="VOTRE MESSAGE"></textarea>
-								</div>
-							</div>
-						</div>
-						<button class="btn" type="submit">ENVOI</button>
-					</form>
+           </form>
 				</div>
+			</div>
+
+
+			<div id="contact" class="tab-pane fade">
+				<!--Ici va se trouver	le contact-->
+				<form class="form-contact champ" action="index.html" method="post">
+					<div id="erreur">
+						<!--<p>ce champ doit etre renseigné</p>-->
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-1">
+					<input class="form-control nom" type="text" placeholder="NOM" value="">
+				    </div>
+						<div class="col-md-5"></div>
+					</div>
+						<div class="row">
+							<div class="col-md-6 col-md-offset-1">
+					<input class="form-control prenom" type="text" placeholder="PRENOM" value="">
+				</div>
+				<div class="col-md-5"></div>
+			</div>
+			    <div class="row">
+						<div class="col-md-6 col-md-offset-1">
+					<input class="form-control mail" type="text" placeholder="EMAIL" value="">
+				</div>
+				<div class="col-md-5"></div>
+			</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<textarea class="form-control" rows="5" placeholder="VOTRE MESSAGE"></textarea>
+					</div>
+				</div>
+					<button class="btn" type="submit">ENVOI</button>
+					<input type="reset" id="reset" value="Rafraîchir" />
+				</form>
 			</div>
 		</div>
 	</body>
