@@ -1,19 +1,54 @@
-# TI-FrontEnd-AllezCine
+# Site avec layout - Ciné Passion
 
-## Menu - Claudy
+## Répartition des tâches
 
-## En-tête - Claudy
+### Entrer sur le site
+- JS : Claudy
 
-## Boutons - réseaux sociaux - Thomas
+### Cookie
+- HTML/CSS : Claudy
+- JS : Claudy
 
-## Films - Thomas
+### Menu/Navbar
+- HTML/CSS : Claudy
 
-## Featured movies - Thomas
+### Jumbo/Carousel
+- HTML/CSS : Claudy
+- JS/jQuery : Thomas
 
-## Featured series - Claudy
+Fonctionnel
 
-## Shop movies - Thomas
+### Aside/Réseaux Sociaux
+- HTML/CSS : Thomas
 
-## Contact -Thomas
+Fonctionnel
 
-## Footer - Claudy
+### Films
+- HTML/CSS : Thomas
+
+Manque de JS et CSS pour les modals
+
+### Featured movies
+- HTML/CSS : Thomas
+- JS/jQuery: Thomas
+
+Fonctionnel
+
+### Shop movies
+- HTML/CSS : Thomas
+- JS/jQuery : Thomas
+
+Fonctionnel malgré un slider dégueulasse
+
+### Contact
+- HTML/CSS : Thomas
+
+Fonctionnel (#consignes)
+
+### Footer
+- HTML/CSS : Claudy
+
+### Flêche
+- JS : Thomas
+
+Fonctionnel mais pas très 'smooth'
