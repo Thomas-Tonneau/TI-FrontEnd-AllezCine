@@ -1,3 +1,7 @@
+
+
+
+
 $(document).ready(function(){
     var $nom = $('.nom');
     var $prenom = $('.prenom');
@@ -64,7 +68,7 @@ $(document).ready(function(){
             borderColor : '#ccc',
             color : '#555'
         });
-        $erreur.css('display', 'none'); // on prend soin de cacher le message d'erreur
+        $erreur.hide(); // on prend soin de cacher le message d'erreur
     });
     function verifier(champ){
         if(champ.val() == null){ // si le champ est vide
@@ -75,7 +79,7 @@ $(document).ready(function(){
             });
         }
     }
-  
+
 	$('#left-radius').click(function () {
 		$('body').css('background-image', 'url(images/village.jpeg)');
 	});
@@ -131,5 +135,4 @@ $(document).ready(function(){
     $(function () {
         $('[data-toggle="popover"]').popover()
     });
-  
 });
