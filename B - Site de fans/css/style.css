@@ -9,8 +9,8 @@ body{
 
 .all-content{
 	height: 100vh;
-	overflow: scroll;
-  overflow-x: hidden;
+	overflow-y: scroll;
+  
 }
 
 .tab-content{
