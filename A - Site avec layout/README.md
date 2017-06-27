@@ -1,19 +1,40 @@
 # TI-FrontEnd-AllezCine
 
-## Menu - Claudy
+## Répartition des tâches
 
-## En-tête - Claudy
+### Entrer sur le site
+- JS : Claudy
 
-## Boutons - réseaux sociaux - Thomas
+### Cookie
+- HTML/CSS : Claudy
+- JS : Claudy
 
-## Films - Thomas
+### Menu/Navbar
+- HTML/CSS : Claudy
 
-## Featured movies - Thomas
+### Jumbo/Carousel
+- HTML/CSS : Claudy
+- JS/jQuery : Thomas
 
-## Featured series - Claudy
+### Aside/Réseaux Sociaux
+- HTML/CSS : Thomas
 
-## Shop movies - Thomas
+### Films
+- HTML/CSS : Thomas
 
-## Contact -Thomas
+### Featured movies
+- HTML/CSS : Thomas
+- JS/jQuery: Thomas
 
-## Footer - Claudy
+### Shop movies
+- HTML/CSS : Thomas
+- JS/jQuery : Thomas
+
+### Contact
+- HTML/CSS : Thomas
+
+### Footer
+- HTML/CSS : Claudy
+
+### Flêche
+- JS : Thomas
