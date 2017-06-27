@@ -1,4 +1,4 @@
-# TI-FrontEnd-AllezCine
+# Site avec layout - Ciné Passion
 
 ## Répartition des tâches
 
