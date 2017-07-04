@@ -1,7 +1,7 @@
 function verifyage(){
       var age=parseInt(prompt("Quel âge avez-vous ? : "));
       if (age<18){
-        document.location.href="asterix.html";
+        document.location.href="B - Site de fans/asterix.html";
       }
 }
 
