@@ -98,6 +98,15 @@ p{
 
 }
 
+#valider{
+	width: 108.5px;
+}
+
+.modal-dialog{
+	text-align: initial;
+	line-height: initial;
+}
+
 /*barre de navigation*/
 #home{
    background-color: #FF9200;
@@ -524,7 +533,6 @@ footer h4{
 }
 footer .logo{
 	width:25%;
-  background-color: white;
 }
 footer .mail {
 	padding: 0 ;

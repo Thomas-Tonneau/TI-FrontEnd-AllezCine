@@ -1,13 +1,20 @@
+<?php 
+	session_start(); 
+	$_SESSION['connecte'] = false;
+?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>CINE passion</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- css -->
 		<link rel="stylesheet" type="text/css" href="A - Site avec layout/css/bootstrap.min.css">
 		<link rel="stylesheet" href="A - Site avec layout/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="A - Site avec layout/css/style.css">
+		<!-- favicon -->
 		<link rel="icon" href="A - Site avec layout/img/logo-favicon.png">
+		<!-- scripts js -->
 		<script src="A - Site avec layout/js/jquery-2.2.4.js"></script>
 		<script src="A - Site avec layout/js/jquery-ui.min.js"></script>
 		<script src="A - Site avec layout/js/bootstrap.min.js"></script>
@@ -15,15 +22,20 @@
 	</head>
 	<body data-spy="scroll" data-target=".navbar">
 		<header>
+			<!-- ask the user's age : redirection if minor -->
 			<script>
-				verifyage();
+				//verifyage();
 			</script>
+			<!-- cookies -->
 			<div id="cookie"><span class="cookie-span">Nous utilisons des <a class="cookie-link" href="">cookies</a> pour optimiser votre expérience sur notre site. En utilisant notre site vous acceptez que nous appliquions des cookies</span><a id="cookie-dismiss" href="#">Ok</a></div>
 			<div class="container">
+				<!-- section with logo, seekbar and connection button -->
 				<div  id="recherche" class="row">
+					<!-- logo -->
 					<div class="col-md-2 col-md-offset-1">
 						<img src="A - Site avec layout/img/cinepassion-logo.png" alt="" width="65%">
 					</div>
+					<!-- seekbar -->
 					<div class="col-md-4 barre-go">
 						<div class="input-group ">
 							<input type="text" class="form-control"  placeholder="Search" >
@@ -32,32 +44,48 @@
 							</span>
 						</div>
 					</div>
+					<!-- phone number with glyphicon -->
 					<div class="col-md-2 text-right">
-						<span class="glyphicon glyphicon-earphone"></span>+(000) 123 435 653
+						<span class="glyphicon glyphicon-earphone"></span><p>+(000) 123 435 653</p>
 					</div>
+					<!-- login button -->
 					<div class="col-md-2 text-right">
+						<!-- button to open modal -->
 						<button type="button" class="btn login" data-toggle="modal" data-target="#myModal">LOGIN</button>
+						<!-- modal to log in -->
 						<div class="modal fade" id="myModal" role="dialog">
-							<div class="modal-dialog">
+							<div class="modal-dialog modal-sm">
 								<div class="modal-content">
+									<!-- modal header -->
 									<div class="modal-header">
 										<button type="button" class="close" data-dismiss="modal">&times;</button>
 										<h4 class="modal-title">CONNECTEZ-VOUS</h4>
 									</div>
-									<div class="modal-body">
+									<!-- modal body -->
+									<div class="modal-body" id="modal-login">
+										<!-- form with identifiers -->
 										<form>
 											<div id=formulaire>
-												<label for="identifiant">Identifiant : </label><input type="text" name="identifiant" id="identifiant"/>
-												<label for="password">Password :  </label><input type="text" name="password" id="password"/>
-												<label for="remember_box"><input checked="checked" value="1" id="remember_box" type="checkbox"> Rester connecté</label>
-												<a class="pwd" href="">Si vous avez oublié votre mot de passe</a>
-												<button type="button" class="btn btn-default">Créer un compte</button>
+											<div id="notification"></div>
+											<div class="form-group">
+												<label for="identifiant">Identifiant : </label><input type="text" class="form-control" name="identifiant" id="identifiant"/>
+											</div>
+											<div class="form-group">
+												<label for="password">Password :  </label>
+												<input type="text" class="form-control" name="password" id="password"/>
+											</div>
+											<div class="checkbox">
+												<label for="remember_box"><input checked="checked" value="" id="remember_box" type="checkbox"> Rester connecté</label>
+											</div>
+												<!--<div><a class="pwd" href="">Si vous avez oublié votre mot de passe</a></div>
+												<button type="button" class="btn btn-default">Créer un compte</button>-->
 											</div>
 										</form>
 									</div>
+									<!-- modal footer -->
 									<div class="modal-footer">
-										<button onclick="ok" name="valider" id="valider">ok</button>
-										<a href=" " data-dismiss="modal">Cancel</a>
+										<button name="valider" class="btn btn-default" type="button" id="valider">Log In</button>
+										<button class="btn btn-default disabled" type="button" id="cancel">Cancel</button>
 									</div>
 								</div>
 							</div>
@@ -65,18 +93,20 @@
 					</div>
 				</div>
 			</div>
+			<!-- navigation bar -->
 			<nav id="home" class="navbar navbar-inverse">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1">
+							<!-- navbar header with button for mobiles -->
 							<div class="navbar-header">
 								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								</button>
-								<a class="navbar-brand" href="#">   </a>
 							</div>
+							<!-- navbar collapsed on mobiles with links to the sections  -->
 							<div class="collapse navbar-collapse" id="myNavbar">
 								<ul class="nav navbar-nav">
 									<li class="active link"><a href="#home">Home</a></li>
@@ -123,6 +153,7 @@
 					</div>
 				</div>
 			</nav>
+			<!-- jumbotron with carousel -->
 			<div id="jumbotron" class="jumbotron text-center no-padding">
 				<div class="container-fluid">
 					<div class="row">
@@ -1268,7 +1299,7 @@
 								</div>
 							</div>
 							<div class="col-md-8 text-right">
-								<img class="logo" src="A - Site avec layout/img/cinepassion-logo.png" alt="" >
+								<img class="logo" src="A - Site avec layout/img/cinepassion-logo-negative.png" alt="" >
 							</div>
 						</div>
 						<div class="row">

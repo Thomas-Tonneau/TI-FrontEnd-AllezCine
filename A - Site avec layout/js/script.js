@@ -1,6 +1,13 @@
+// Contrôle de l'âge : majeur ?
 function verifyage(){
-      var age=parseInt(prompt("Quel âge avez-vous ? : "));
-      if (age<18){
+      var age = null;
+      // tant que rien n'est rentré, que l'on clique sur 'cancel'
+      // ou que l'on ne rentre pas un nombre
+      while(age === null || age =="" || isNaN(age)){
+        age=prompt("Ce site est réservé aux plus de 18 ans.\nVeuillez entrer votre âge : ");
+      }
+      age = parseInt(age);
+      if (age<18){ // si mineur, redirection vers le site de fans
         document.location.href="B - Site de fans/asterix.html";
       }
 }
@@ -8,11 +15,16 @@ function verifyage(){
 $(document).ready(function () {
 
 	$('btn-less').hide();
+	
+	// variable for xmlhttprequest 
+	var jqxhr;
 
+  // arrow back to top with createElement
 	var displayed = false;
 	$(window).scroll(function () {
 		var scroll = $(window).scrollTop();
-		if(scroll >= 200 && !displayed){
+    // if we are below navbar
+    if(scroll >= 200 && !displayed){
 			var backToTop = document.createElement('a');
 			backToTop.id = 'go-top';
 			backToTop.href = "#recherche";
@@ -22,11 +34,19 @@ $(document).ready(function () {
 			backToTopIcon.className = "fa fa-arrow-up";
 			document.getElementById('go-top').appendChild(backToTopIcon);
 			displayed=true;
+    // else if we are above navbar
 		} else if(scroll < 200 && displayed){
 			displayed=false;
 			document.getElementById('go-top').remove();
 		}
-	})
+	});
+
+  $('#go-top-container').click(function(event){
+  	 event.preventDefault();
+    $('html, body').animate({
+        scrollTop: 0
+    }, 1000);
+  });
 
 	// progress bar in jumbotron
 	var width = 0;
@@ -147,5 +167,36 @@ $(document).ready(function () {
 			$('.nav>.col-md-2:visible:first').hide();
 			$('.nav>.col-md-2:visible:last').next().show();
 		}
+	});
+
+	// Crée une requête ajax (post - login.php) au clic du bouton de connexion 
+	$('#valider').click(function () {
+		if($('#identifiant').val() != "" && $('#password').val() != ""){
+			jqxhr = $.post(
+				"A - Site avec layout/login.php", 
+				{
+					id : $('#identifiant').val(),
+					pwd : $('#password').val()
+				},
+				function (response) {
+					$('#notification').html(response);
+					$('#valider').html("Log In");
+					$('#cancel').addClass("disabled");
+				}
+			);
+		}
+	});
+
+	// Affiche un gif de chargement quand la fonction ajax commence
+	$(document).ajaxStart(function () {
+		$('#valider').html("<img src='A - Site avec layout/img/wait.gif' width='20%'>");
+		$('#cancel').removeClass("disabled");
+	});
+
+	$('#cancel').click(function () {
+		jqxhr.abort();
+		$('#valider').html("Log In");
+		$('#cancel').addClass("disabled");
+		//$('#valider').
 	});
 });
